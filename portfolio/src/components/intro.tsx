@@ -2,8 +2,10 @@
 
 import Image from 'next/image'
 import React from 'react'
-import profile_pic from "@/public/profile_pic.jpg";
+import profile_pic from "../../public/profile_pic.jpg";
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight, BsDownload } from "react-icons/bs"
 
 export default function Intro() {
     return (
@@ -49,7 +51,7 @@ export default function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                
+
                 <span className="font-bold">Hi, I'm Sarthak Khandelwal,</span> a passionate{" "}
                 <span className="font-bold">computer engineering student</span> thriving in my{" "}
                 <span className="font-bold">3rd year of BTech</span> at{" "}
@@ -58,6 +60,36 @@ export default function Intro() {
                 and dedicated to building exceptional <span className="underline">digital experiences</span>.
 
             </motion.p>
+
+            <motion.div
+                className="flex flex-col sm:flex-row items-center justify-center 
+                gap-8 px-4 text-lg font-medium"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    delay: 0.1,
+                }}
+            >
+                <Link
+                    href="#contact"
+                    className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
+                    rounded-full outline-none focus:scale-100 hover:scale-105 hover:bg-gray-950
+                    active:scale-100 transition">
+
+                    Contact me here <BsArrowRight
+                        className="opacity-75 group-hover:translate-x-1 transition" />
+                </Link>
+
+                <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
+                outline-none hover:scale-105 transition cursor-cell"
+                    href="/Sarthak_Khandelwal.pdf" download>
+
+                    Download CV <BsDownload
+                        className="opacity-75 group-hover:translate-y-1 transition" />
+                </a>
+
+            </motion.div>
+
         </section>
     )
 }

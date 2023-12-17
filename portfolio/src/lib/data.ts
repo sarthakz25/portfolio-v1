@@ -2,9 +2,9 @@ import React from "react";
 import { FaCode } from "react-icons/fa"
 import { FaTrain } from "react-icons/fa6"
 import { MdEvent } from "react-icons/md"
-import bookmark from "@/public/bookmark.png"
-import converse from "@/public/converse.png"
-import screenscape from "@/public/screenscape.jpg"
+import bookmark from "../../public/bookmark.png"
+import converse from "../../public/converse.png"
+import screenscape from "../../public/screenscape.jpg"
 
 export const links = [
     {

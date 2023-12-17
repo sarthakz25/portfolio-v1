@@ -6,6 +6,7 @@ import profile_pic from "../../public/profile_pic.jpg";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsDownload } from "react-icons/bs"
+import { SiLinkedin, SiGithub } from "react-icons/si"
 
 export default function Intro() {
     return (
@@ -22,7 +23,7 @@ export default function Intro() {
                     >
                         <Image
                             className="h-24 w-24 rounded-full object-cover
-                            border-[0.35rem] border-white shadow-xl"
+                            border-[0.25rem] border-white shadow-xl"
                             src={profile_pic}
                             alt='Display Picture'
                             width="192"
@@ -63,7 +64,7 @@ export default function Intro() {
 
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center 
-                gap-6 px-4 text-lg font-medium"
+                gap-4 px-4 text-lg font-medium"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -86,6 +87,18 @@ export default function Intro() {
 
                     Download CV <BsDownload
                         className="opacity-75 group-hover:translate-y-1 transition" />
+                </a>
+
+                <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
+                gap-2 rounded-full border border-black/10 hover:scale-[1.075] cursor-pointer transition"
+                    href="https://www.linkedin.com/in/sarthakhandelwal/" target="_blank">
+                    <SiLinkedin />
+                </a>
+
+                <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
+                rounded-full border text-[1.2rem] border-black/10 hover:scale-[1.075] cursor-pointer transition"
+                    href="https://github.com/sarthakz25" target="_blank">
+                    <SiGithub />
                 </a>
 
             </motion.div>

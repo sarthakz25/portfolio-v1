@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function About() {
     return (
         <motion.section
-            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 px-2"
+            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 m-4 text-lg"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -22,7 +22,7 @@ export default function About() {
                 Based in the <span className="font-medium">vibrant tech hub of Mumbai, India</span>,
                 I live at the epicenter of innovation, continually developing my skills to contribute to the
                 next wave of digital advancement. My fascination with technology started from taking gadgets
-                apart to see how they work, all the way to staying up late
+                apart to see how they work, all the way to staying up late{" "}
                 <span className="italic">tinkering with code</span>.
                 Lately, I've been focused on honing my skills in{" "}
                 <span className="font-medium">React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python</span>.

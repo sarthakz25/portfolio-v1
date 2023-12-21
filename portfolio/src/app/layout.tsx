@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Ageo } from '@/utils/custom-font'
 import './globals.css'
 import Header from "@/components/header"
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: '<Sarthak/> Portfolio',
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 text-gray-950 relative 
+      <body className={`${Ageo.className} bg-gray-50 text-gray-950 relative 
       h-[5000px] pt-28 sm:pt-36`}>
 
         <Header />

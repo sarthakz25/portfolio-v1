@@ -5,8 +5,7 @@ import React from 'react'
 import profile_pic from "../../public/profile_pic.jpg";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BsArrowRight, BsDownload } from "react-icons/bs"
-import { SiLinkedin, SiGithub } from "react-icons/si"
+import { BsArrowRight, BsDownload, BsLinkedin, BsGithub } from "react-icons/bs"
 
 export default function Intro() {
     return (
@@ -92,13 +91,13 @@ export default function Intro() {
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
                 gap-2 rounded-full border border-black/10 hover:scale-[1.075] cursor-pointer transition"
                     href="https://www.linkedin.com/in/sarthakhandelwal/" target="_blank">
-                    <SiLinkedin />
+                    <BsLinkedin />
                 </a>
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
-                rounded-full border text-[1.2rem] border-black/10 hover:scale-[1.075] cursor-pointer transition"
+                rounded-full border text-[1.175rem] border-black/10 hover:scale-[1.075] cursor-pointer transition"
                     href="https://github.com/sarthakz25" target="_blank">
-                    <SiGithub />
+                    <BsGithub />
                 </a>
 
             </motion.div>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Ageo } from '@/utils/custom-font'
 import './globals.css'
-import Header from "@/components/header"
 
 export const metadata: Metadata = {
   title: '<Sarthak/> Portfolio',
@@ -16,8 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${Ageo.className} text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}>
-
-        <Header />
 
         {children}
       </body>

@@ -73,8 +73,8 @@ export default function Intro() {
                 <Link
                     href="#contact"
                     className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
-                    rounded-full outline-none focus:scale-100 hover:scale-105 hover:bg-gray-900
-                    active:scale-100 transition border border-black/10">
+                    rounded-full outline-none hover:scale-105 hover:bg-gray-900
+                    transition border border-black/10">
 
                     Contact me here <BsArrowRight
                         className="opacity-75 group-hover:translate-x-1 transition" />

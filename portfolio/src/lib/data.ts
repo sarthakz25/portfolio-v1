@@ -66,19 +66,19 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "Bookmark - College Library AR Navigation App",
-        description: "Developed an augmented reality mobile application that provides indoor navigation and wayfinding in a college library using QR code re-centering, movable arrow/line guides, and mapped routes to library sections like book shelves, reading areas, computers, rooms, etc.",
-        tags: ["Unity", "Google AR Core", "C#"],
+        title: "Bookmark",
+        description: "Developed an augmented reality mobile application that provides indoor navigation and wayfinding in a college library using QR code re-centering, movable arrow/line guides, and mapped routes.",
+        tags: ["Unity", "ARCore", "C#"],
         imageUrl: bookmark,
     },
     {
-        title: "Converse - Social Media App",
+        title: "Converse",
         description: "Created a social media mobile application that enables users (conversers) to share content, comment, vote, join conclaves, interact on an intuitive interface, etc.",
         tags: ["Flutter", "Riverpod", "Firebase", "Android Studio"],
         imageUrl: converse,
     },
     {
-        title: "ScreenScape - Movie Website",
+        title: "ScreenScape",
         description: "Built a movie website with features key features like authentication, movie search and filtering, movie details and trailers, ratings, profile management.",
         tags: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
         imageUrl: screenscape,
@@ -98,7 +98,7 @@ export const skillsData = [
     "Firebase",
     "NumPy",
     "Matplotlib",
-    "Google AR Core",
+    "ARCore",
     "Android Studio",
     "Unity",
 ] as const;

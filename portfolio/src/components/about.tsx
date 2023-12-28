@@ -1,18 +1,23 @@
 "use client";
 
-import React from 'react'
-import SectionHeading from './section-heading'
-import { motion } from 'framer-motion'
+import React from 'react';
+import SectionHeading from './section-heading';
+import { motion } from 'framer-motion';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
+    const { ref } = useSectionInView('About');
+
     return (
         <motion.section
-            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 m-4 text-lg"
+            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
                 delay: 0.175
             }}
+            id='about'
+            ref={ref}
         >
             <SectionHeading>
                 About Me
@@ -29,7 +34,7 @@ export default function About() {
             </p>
 
             <p>
-                If our paths cross, feel free to say <span className="italic underline font-medium">hello</span>! 
+                If our paths cross, feel free to say <span className="italic underline font-medium">hello</span>!
                 Whether meeting over coffee ☕ or a virtual chat, let's dive into{" "}
                 <span className="font-medium">front-end innovation, back-end systems, favorite coding languages</span>
                 , or anything on the cutting edge of <span className="font-medium">technology</span>.

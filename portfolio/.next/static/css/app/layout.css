@@ -602,6 +602,9 @@ video {
 .relative {
   position: relative;
 }
+.inset-0 {
+  inset: 0px;
+}
 .-right-36 {
   right: -9rem;
 }
@@ -622,6 +625,9 @@ video {
 }
 .top-\[0\.15rem\] {
   top: 0.15rem;
+}
+.-z-10 {
+  z-index: -10;
 }
 .z-\[999\] {
   z-index: 999;
@@ -690,20 +696,11 @@ video {
 .w-\[22rem\] {
   width: 22rem;
 }
-.w-\[28\.25rem\] {
-  width: 28.25rem;
+.w-\[29rem\] {
+  width: 29rem;
 }
 .w-full {
   width: 100%;
-}
-.w-\[35rem\] {
-  width: 35rem;
-}
-.w-\[28\.5rem\] {
-  width: 28.5rem;
-}
-.w-\[29rem\] {
-  width: 29rem;
 }
 .max-w-\[45rem\] {
   max-width: 45rem;
@@ -723,6 +720,12 @@ video {
 }
 .resize {
   resize: both;
+}
+.scroll-mt-28 {
+  scroll-margin-top: 7rem;
+}
+.scroll-mt-96 {
+  scroll-margin-top: 24rem;
 }
 .flex-col {
   flex-direction: column;
@@ -747,6 +750,9 @@ video {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.\!scroll-smooth {
+  scroll-behavior: smooth !important;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -777,6 +783,10 @@ video {
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
 }
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -797,8 +807,53 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+.bg-zinc-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+.bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+.bg-neutral-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+.bg-stone-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 244 / var(--tw-bg-opacity));
+}
+.bg-inherit {
+  background-color: inherit;
+}
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+.bg-opacity-100 {
+  --tw-bg-opacity: 1;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1108,8 +1163,8 @@ body {
     height: initial;
   }
 
-  .sm\:w-\[37rem\] {
-    width: 37rem;
+  .sm\:w-\[36rem\] {
+    width: 36rem;
   }
 
   .sm\:w-\[initial\] {

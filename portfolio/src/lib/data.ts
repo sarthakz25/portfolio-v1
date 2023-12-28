@@ -4,7 +4,7 @@ import { FaTrain } from "react-icons/fa6"
 import { MdEvent } from "react-icons/md"
 import bookmark from "../../public/bookmark.png"
 import converse from "../../public/converse.png"
-import screenscape from "../../public/screenscape.jpg"
+import screenscape from "../../public/screenscape.png"
 
 export const links = [
     {
@@ -66,16 +66,16 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Converse",
+        description: "Created a social media mobile application that enables users (conversers) to share content, comment, vote, join conclaves, interact on an intuitive interface, etc.",
+        tags: ["Flutter", "Riverpod", "Firebase"],
+        imageUrl: converse,
+    },
+    {
         title: "Bookmark",
         description: "Developed an augmented reality mobile application that provides indoor navigation and wayfinding in a college library using QR code re-centering, movable arrow/line guides, and mapped routes.",
         tags: ["Unity", "ARCore", "C#"],
         imageUrl: bookmark,
-    },
-    {
-        title: "Converse",
-        description: "Created a social media mobile application that enables users (conversers) to share content, comment, vote, join conclaves, interact on an intuitive interface, etc.",
-        tags: ["Flutter", "Riverpod", "Firebase", "Android Studio"],
-        imageUrl: converse,
     },
     {
         title: "ScreenScape",
@@ -99,6 +99,5 @@ export const skillsData = [
     "NumPy",
     "Matplotlib",
     "ARCore",
-    "Android Studio",
     "Unity",
 ] as const;

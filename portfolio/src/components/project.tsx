@@ -27,18 +27,18 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         className="group mb-4 sm:mb-8 last:mb-0"
     >
         <section
-            className="bg-zinc-50 max-w-[45rem] border border-black/5 overflow-hidden sm:pr-8
-            relative sm:h-[20rem] hover:bg-zinc-100 transition group-even:pl-8 rounded-lg"
+            className="bg-zinc-50 max-w-[45rem] border border-black/10 overflow-hidden sm:pr-8
+            relative sm:h-[20rem] hover:bg-zinc-100 transition group-even:pl-8 rounded-xl"
         >
-            <div className="pt-4 px-5 pb-8 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full
-        group-even:ml-[18rem]"
+            <div className="pt-5 px-5 pb-5 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] flex flex-col h-full
+        group-even:ml-[20rem]"
             >
                 <h3 className="text-xl font-semibold">{title}</h3>
                 <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-                <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+                <ul className="flex flex-wrap mt-5 gap-2 sm:mt-auto">
                     {
                         tags.map((tag, index) => (
-                            <li className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider
+                            <li className="bg-zinc-700 px-3 py-1 text-xs uppercase tracking-wider
                         text-white rounded-full" key={index}>
                                 {tag}
                             </li>
@@ -48,7 +48,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
             </div>
 
             <Image src={imageUrl} alt="Project I worked on" quality={95}
-                className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl 
+                className="absolute top-8 -right-36 w-[29rem] rounded-t-lg shadow-2xl 
             group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3
             group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04]
             group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 

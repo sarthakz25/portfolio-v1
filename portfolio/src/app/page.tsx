@@ -8,6 +8,7 @@ import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
 import Preloader from "@/components/preloader";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +17,6 @@ export default function Home() {
   useEffect(() => {
     const preloaderTimer = setTimeout(() => {
       setIsLoading(false);
-      window.scrollTo(0, 0);
     }, 2000);
 
     const contentTimer = setTimeout(() => {
@@ -41,6 +41,7 @@ export default function Home() {
           <SectionDivider />
           <About />
           <Projects />
+          <Skills />
         </>
       )}
     </main>

@@ -7,3 +7,11 @@ body {
     background-size: 200px 200px;
     background-position: 0 0;
 }
+
+html {
+    --line-color: #e4e4e7;
+}
+
+.borderBlack {
+    @apply border border-black/10;
+}

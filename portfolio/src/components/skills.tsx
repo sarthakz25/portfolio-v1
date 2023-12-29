@@ -5,7 +5,6 @@ import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from "framer-motion";
-import { opacity } from './preloader/anim';
 
 const fadeInAnimationVariants = {
     initial: {
@@ -40,7 +39,7 @@ export default function Skills() {
                     skillsData.map((skill, index) => (
                         <motion.li
                             key={index}
-                            className="bg-white border border-black/10 rounded-xl px-5 py-3"
+                            className="bg-white borderBlack rounded-xl px-5 py-3"
                             variants={fadeInAnimationVariants}
                             initial="initial"
                             whileInView="animate"

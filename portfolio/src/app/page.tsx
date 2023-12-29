@@ -9,6 +9,8 @@ import SectionDivider from "@/components/section-divider";
 import Preloader from "@/components/preloader";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +44,8 @@ export default function Home() {
           <About />
           <Projects />
           <Skills />
+          <Experience />
+          <Contact />
         </>
       )}
     </main>

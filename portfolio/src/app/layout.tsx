@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${Ageo.className} text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}>
+      <body className={`${Ageo.className} text-gray-950 relative pt-28 sm:pt-36`}>
         <ActiveSectionContextProvider>
           {children}
         </ActiveSectionContextProvider>

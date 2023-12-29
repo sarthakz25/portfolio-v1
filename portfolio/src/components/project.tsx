@@ -27,7 +27,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         className="group mb-4 sm:mb-8 last:mb-0"
     >
         <section
-            className="bg-zinc-50 max-w-[45rem] border border-black/10 overflow-hidden sm:pr-8
+            className="bg-zinc-50 max-w-[45rem] borderBlack overflow-hidden sm:pr-8
             relative sm:h-[20rem] hover:bg-zinc-100 transition group-even:pl-8 rounded-xl"
         >
             <div className="pt-5 px-5 pb-5 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] flex flex-col h-full

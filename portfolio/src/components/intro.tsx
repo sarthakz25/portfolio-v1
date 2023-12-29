@@ -93,14 +93,14 @@ export default function Intro() {
                     href="#contact"
                     className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
                     rounded-full outline-none hover:scale-105 hover:bg-gray-900
-                    transition border border-black/10">
+                    transition borderBlack">
 
                     Contact me here <BsArrowRight
                         className="opacity-75 group-hover:translate-x-1 transition" />
                 </Link>
 
                 <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
-                outline-none hover:scale-105 transition cursor-cell border border-black/10"
+                outline-none hover:scale-105 transition cursor-cell borderBlack"
                     href="/Sarthak_Khandelwal.pdf" download>
 
                     Download CV <BsDownload
@@ -108,13 +108,13 @@ export default function Intro() {
                 </a>
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
-                gap-2 rounded-full border border-black/10 hover:scale-[1.075] cursor-pointer transition"
+                gap-2 rounded-full borderBlack hover:scale-[1.075] cursor-pointer transition"
                     href="https://www.linkedin.com/in/sarthakhandelwal/" target="_blank">
                     <BsLinkedin />
                 </a>
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
-                rounded-full border text-[1.175rem] border-black/10 hover:scale-[1.075] cursor-pointer transition"
+                rounded-full text-[1.175rem] borderBlack hover:scale-[1.075] cursor-pointer transition"
                     href="https://github.com/sarthakz25" target="_blank">
                     <BsGithub />
                 </a>

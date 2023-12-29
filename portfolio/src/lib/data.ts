@@ -80,7 +80,7 @@ export const projectsData = [
     {
         title: "ScreenScape",
         description: "Built a movie website with features key features like authentication, movie search and filtering, movie details and trailers, ratings, profile management.",
-        tags: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+        tags: ["HTML", "CSS", "Javascript", "PHP", "SQL"],
         imageUrl: screenscape,
     },
 ] as const;
@@ -91,9 +91,9 @@ export const skillsData = [
     "Python",
     "C++",
     "React",
-    "Javascript",
-    "Typescript",
-    "MySQL",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
     "HTML",
     "CSS",
     "Tailwind",

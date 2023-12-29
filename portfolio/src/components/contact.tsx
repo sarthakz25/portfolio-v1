@@ -1,0 +1,66 @@
+"use client";
+
+import React from 'react'
+import SectionHeading from './section-heading';
+import { FaPaperPlane } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from "framer-motion";
+
+export default function Contact() {
+    const { ref } = useSectionInView('Contact', 0.75);
+
+    return (
+        <motion.section
+            ref={ref}
+            id='contact'
+            className="scroll-mt-28 mb-28 w-[min(100%,38rem)] text-center font-medium"
+            initial={{
+                opacity: 0,
+            }}
+            whileInView={{
+                opacity: 1,
+            }}
+            transition={{
+                duration: 1,
+            }}
+            viewport={{
+                once: true,
+            }}
+        >
+            <SectionHeading>
+                Contact Me
+            </SectionHeading>
+
+            <p className="text-gray-700 -mt-5">
+                Please contact me directly at{" "}
+                <a className="underline" href="mailto:sarthakhandelwal@gmail.com">
+                    sarthakhandelwal@gmail.com
+                </a>{" "}
+                or through this form.
+            </p>
+
+            <form className="mt-10 flex flex-col">
+                <input
+                    className="h-14 rounded-lg borderBlack px-4 bg-zinc-50"
+                    type='email'
+                    placeholder="Your email"
+                />
+                <textarea
+                    className="h-52 my-3 rounded-lg borderBlack p-4 bg-zinc-50"
+                    placeholder="Your message"
+                />
+                <button
+                    type='submit'
+                    className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] 
+                    bg-gray-800 text-white rounded-full outline-none transition-all
+                    hover:scale-105 hover:bg-gray-900 mt-3"
+                >
+                    Submit <FaPaperPlane
+                        className="text-xs opacity-75 transition-all group-hover:translate-x-1
+                        group-hover:-translate-y-1"
+                    />
+                </button>
+            </form>
+        </motion.section>
+    );
+}

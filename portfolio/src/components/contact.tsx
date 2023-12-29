@@ -13,7 +13,7 @@ export default function Contact() {
         <motion.section
             ref={ref}
             id='contact'
-            className="scroll-mt-28 mb-28 w-[min(100%,38rem)] text-center font-medium"
+            className="scroll-mt-28 mb-24 w-[min(100%,38rem)] text-center font-medium"
             initial={{
                 opacity: 0,
             }}
@@ -32,11 +32,11 @@ export default function Contact() {
             </SectionHeading>
 
             <p className="text-gray-700 -mt-5">
-                Please contact me directly at{" "}
+                Let's connect! Reach out via{" "}
                 <a className="underline" href="mailto:sarthakhandelwal@gmail.com">
                     sarthakhandelwal@gmail.com
                 </a>{" "}
-                or through this form.
+                or use the form below.
             </p>
 
             <form className="mt-10 flex flex-col">

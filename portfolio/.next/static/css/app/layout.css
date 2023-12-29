@@ -646,21 +646,17 @@ video {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .\!mt-0 {
   margin-top: 0px !important;
 }
 .\!mt-1 {
   margin-top: 0.25rem !important;
 }
+.-mt-5 {
+  margin-top: -1.25rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-.mb-20 {
-  margin-bottom: 5rem;
 }
 .mb-28 {
   margin-bottom: 7rem;
@@ -680,26 +676,23 @@ video {
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
 }
-.-mt-5 {
-  margin-top: -1.25rem;
+.mb-36 {
+  margin-bottom: 9rem;
 }
-.-mt-10 {
-  margin-top: -2.5rem;
+.mb-24 {
+  margin-bottom: 6rem;
 }
-.-mt-3 {
-  margin-top: -0.75rem;
-}
-.-mt-4 {
-  margin-top: -1rem;
-}
-.mt-3 {
-  margin-top: 0.75rem;
+.\!mt-2 {
+  margin-top: 0.5rem !important;
 }
 .flex {
   display: flex;
@@ -722,23 +715,17 @@ video {
 .h-3\/4 {
   height: 75%;
 }
-.h-\[4\.5rem\] {
-  height: 4.5rem;
-}
-.h-full {
-  height: 100%;
-}
 .h-52 {
   height: 13rem;
 }
 .h-\[3rem\] {
   height: 3rem;
 }
-.h-\[13rem\] {
-  height: 13rem;
+.h-\[4\.5rem\] {
+  height: 4.5rem;
 }
-.h-\[4rem\] {
-  height: 4rem;
+.h-full {
+  height: 100%;
 }
 .w-1 {
   width: 0.25rem;
@@ -752,29 +739,14 @@ video {
 .w-\[29rem\] {
   width: 29rem;
 }
+.w-\[8rem\] {
+  width: 8rem;
+}
 .w-\[min\(100\%\2c 38rem\)\] {
   width: min(100%,38rem);
 }
 .w-full {
   width: 100%;
-}
-.w-\[8rem\] {
-  width: 8rem;
-}
-.w-\[min\(100\%\2c 45rem\)\] {
-  width: min(100%,45rem);
-}
-.w-\[min\(100\%\2c 40rem\)\] {
-  width: min(100%,40rem);
-}
-.w-\[5rem\] {
-  width: 5rem;
-}
-.w-\[9rem\] {
-  width: 9rem;
-}
-.w-\[7rem\] {
-  width: 7rem;
 }
 .max-w-\[45rem\] {
   max-width: 45rem;
@@ -850,16 +822,9 @@ video {
 .border-\[0\.25rem\] {
   border-width: 0.25rem;
 }
-.border-black\/10 {
-  border-color: rgb(0 0 0 / 0.1);
-}
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-opacity-40 {
   --tw-border-opacity: 0.4;
@@ -887,10 +852,6 @@ video {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
-}
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
@@ -1022,6 +983,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -1110,11 +1075,6 @@ html {
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-950:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
-}
-
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -1146,6 +1106,11 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:-translate-y-1 {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1158,11 +1123,6 @@ html {
 
 .group:hover .group-hover\:translate-y-3 {
   --tw-translate-y: 0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:-translate-y-1 {
-  --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1216,6 +1176,14 @@ html {
 
   .sm\:mt-auto {
     margin-top: auto;
+  }
+
+  .sm\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .sm\:mb-36 {
+    margin-bottom: 9rem;
   }
 
   .sm\:block {

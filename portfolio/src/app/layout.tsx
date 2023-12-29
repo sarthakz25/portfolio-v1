@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Ageo } from '@/utils/custom-font'
+import { Ageo } from '@/misc/custom-font'
 import './globals.css'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 

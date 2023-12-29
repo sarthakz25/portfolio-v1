@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsDownload, BsLinkedin, BsGithub } from "react-icons/bs"
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
@@ -22,6 +23,8 @@ export default function Intro() {
     //         setActiveSection("Home");
     //     }
     // }, [inView, setActiveSection, timeOfLastClick]);
+
+    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
         <section
@@ -93,7 +96,12 @@ export default function Intro() {
                     href="#contact"
                     className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
                     rounded-full outline-none hover:scale-105 hover:bg-gray-900
-                    transition borderBlack">
+                    transition borderBlack"
+                    onClick={() => {
+                        setActiveSection('Contact');
+                        setTimeOfLastClick(Date.now());
+                    }}
+                >
 
                     Contact me here <BsArrowRight
                         className="opacity-75 group-hover:translate-x-1 transition" />

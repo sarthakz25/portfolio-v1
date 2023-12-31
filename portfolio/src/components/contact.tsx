@@ -61,6 +61,7 @@ export default function Contact() {
                     required
                     maxLength={250}
                     name="email"
+                    autoComplete='on'
                 />
                 <textarea
                     className="h-52 my-3 rounded-lg borderBlack p-4 bg-zinc-50"

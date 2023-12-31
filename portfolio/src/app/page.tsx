@@ -11,6 +11,8 @@ import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,6 +41,7 @@ export default function Home() {
       {showContent && (
         <>
           <Header />
+          <ThemeSwitch />
           <Intro />
           <SectionDivider />
           <About />
@@ -46,6 +49,7 @@ export default function Home() {
           <Skills />
           <Experience />
           <Contact />
+          <Footer />
         </>
       )}
     </main>

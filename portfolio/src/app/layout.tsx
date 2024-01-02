@@ -3,6 +3,7 @@ import { Ageo } from '@/misc/custom-font';
 import './globals.css';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import { Toaster } from 'react-hot-toast';
+import ThemeContextProvider from '@/context/theme-context';
 
 export const metadata: Metadata = {
   title: '<Sarthak/> Portfolio',
@@ -20,11 +21,13 @@ export default function RootLayout({
         className={`${Ageo.className} text-gray-950 relative pt-28 sm:pt-36 
         dark:bg-zinc-900 dark:text-zinc-50 dark:text-opacity-90`}
       >
-        <ActiveSectionContextProvider>
-          {children}
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            {children}
 
-          <Toaster position='bottom-center' />
-        </ActiveSectionContextProvider>
+            <Toaster position='bottom-center' />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   )

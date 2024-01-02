@@ -4,9 +4,11 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
+import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
     const { ref } = useSectionInView('Experience', 0.4);
+    const { theme } = useTheme();
 
     return (
         <section
@@ -25,26 +27,27 @@ export default function Experience() {
                             <VerticalTimelineElement
                                 visible={true}
                                 contentStyle={{
-                                    background: "#fafafa",
+                                    background: theme === 'light' ? "#fafafa" : "rgba(255, 255, 255, 0.05)",
                                     boxShadow: "none",
-                                    border: "1px solid rgba(0,0,0,0.1)",
+                                    border: "1px solid rgba(0, 0, 0, 0.1)",
                                     textAlign: "left",
                                     padding: "1.3rem 2rem",
                                 }}
                                 contentArrowStyle={{
-                                    borderRight: "0.4rem solid rgba(0,0,0,0.2)",
+                                    borderRight: theme === 'light' ? "0.4rem solid rgba(0, 0, 0, 0.2)" :
+                                        "0.4rem solid rgba(255,255,255,0.1)",
                                 }}
                                 date={item.date}
                                 icon={item.icon}
                                 iconStyle={{
-                                    background: "white",
+                                    background: theme === 'light' ? "white" : "rgb(24, 24, 27)",
                                     fontSize: "1.5rem",
-                                    color: "rgba(0,0,0,0.65)"
+                                    color: theme === 'light' ? "rgba(0, 0, 0, 0.65)" : "rgb(228, 228, 231)",
                                 }}
                             >
                                 <h3 className="font-semibold">{item.title}</h3>
                                 <p className="font-normal !mt-0">{item.location}</p>
-                                <p className="!mt-2 font-normal text-gray-700">{item.description}</p>
+                                <p className="!mt-2 font-normal text-gray-700 dark:text-white/75">{item.description}</p>
                             </VerticalTimelineElement>
                         </React.Fragment>
                     ))

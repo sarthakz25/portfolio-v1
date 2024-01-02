@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
-
-type Theme = 'light' | 'dark';
+import { useTheme } from '@/context/theme-context';
 
 export default function ThemeSwitch() {
-    const [theme, setTheme] = useState<Theme>('light');
-
-    const toggleTheme = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        window.localStorage.setItem('theme', newTheme);
-        document.documentElement.classList.toggle('dark', newTheme === 'dark');
-    };
-
-    useEffect(() => {
-        const localTheme = window.localStorage.getItem('theme') as Theme | null;
-        const isDarkMode = localTheme === 'dark' || (!localTheme && window.matchMedia("(prefers-color-scheme: dark)").matches);
-        setTheme(isDarkMode ? 'dark' : 'light');
-        document.documentElement.classList.toggle('dark', isDarkMode);
-    }, []);
+    const { theme, toggleTheme } = useTheme();
 
     const iconVariants = {
         initial: {
@@ -30,14 +15,14 @@ export default function ThemeSwitch() {
             scale: 1,
             opacity: 1,
             transition: {
-                duration: 0.125
+                duration: 0.1
             }
         },
         exit: {
             scale: 0,
             opacity: 0,
             transition: {
-                duration: 0.125
+                duration: 0.1
             }
         }
     };

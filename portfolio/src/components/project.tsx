@@ -49,7 +49,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
 
             <Image src={imageUrl} alt="Project I worked on" quality={95}
                 className="absolute top-8 -right-36 w-[29rem] rounded-t-lg shadow-2xl 
-            group-even:right-[initial] group-even:-left-40 group-hover:-translate-x-3
+            group-even:right-[initial] group-even:-left-36 group-hover:-translate-x-3
             group-hover:translate-y-3 group-hover:-rotate-2 transition group-hover:scale-[1.04]
             group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 
             group-even:group-hover:rotate-2"

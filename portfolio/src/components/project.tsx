@@ -29,7 +29,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
         <section
             className="bg-zinc-50 max-w-[45rem] borderBlack overflow-hidden sm:pr-8
             relative sm:h-[20rem] hover:bg-zinc-100 transition sm:group-even:pl-8 rounded-xl
-            dark:bg-white/5 dark:hover:bg-white/10 dark:text-white"
+            dark:bg-white/5 dark:hover:bg-white/10 dark:text-white dark:border-white/5"
         >
             <div className="pt-5 px-5 pb-5 sm:pb-8 sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[50%] flex flex-col h-full
         sm:group-even:ml-[20rem]"

@@ -57,7 +57,7 @@ export default function Contact() {
                 <input
                     className="h-14 rounded-lg borderBlack px-4 bg-zinc-50 bg-opacity-60
                     focus:bg-opacity-100 dark:bg-zinc-700 dark:bg-opacity-60 dark:focus:bg-opacity-90  
-                    dark:text-gray-100 transition-all outline-none"
+                    dark:text-gray-100 transition-all outline-none dark:border-white/5"
                     type='email'
                     placeholder="Your email"
                     required
@@ -68,7 +68,7 @@ export default function Contact() {
                 <textarea
                     className="h-52 my-3 rounded-lg borderBlack p-4 bg-zinc-50 bg-opacity-60
                     focus:bg-opacity-100 dark:bg-zinc-700 dark:bg-opacity-60 dark:focus:bg-opacity-90  
-                    dark:text-gray-100 transition-all outline-none"
+                    dark:text-gray-100 transition-all outline-none dark:border-white/5"
                     placeholder="Your message"
                     required
                     maxLength={1000}

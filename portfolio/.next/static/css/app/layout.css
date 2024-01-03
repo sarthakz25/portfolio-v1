@@ -975,6 +975,12 @@ video {
 .font-semibold {
   font-weight: 600;
 }
+.font-light {
+  font-weight: 300;
+}
+.font-thin {
+  font-weight: 100;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1188,6 +1194,32 @@ html.dark {
 
 :is(.dark .dark\:border-black\/5) {
   border-color: rgb(0 0 0 / 0.05);
+}
+
+:is(.dark .dark\:border-white\/10) {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+:is(.dark .dark\:border-white\/5) {
+  border-color: rgb(255 255 255 / 0.05);
+}
+
+:is(.dark .dark\:border-white) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-black\/10) {
+  border-color: rgb(0 0 0 / 0.1);
+}
+
+:is(.dark .dark\:border-black) {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-white\/20) {
+  border-color: rgb(255 255 255 / 0.2);
 }
 
 :is(.dark .dark\:bg-white\/10) {

@@ -96,7 +96,7 @@ export default function Intro() {
                     href="#contact"
                     className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
                     rounded-full outline-none hover:scale-105 hover:bg-gray-900 transition borderBlack
-                    dark:bg-zinc-300 dark:hover:bg-zinc-200 dark:text-gray-900"
+                    dark:bg-zinc-300 dark:hover:bg-zinc-200 dark:text-gray-900 dark:border-white/5"
                     onClick={() => {
                         setActiveSection('Contact');
                         setTimeOfLastClick(Date.now());
@@ -108,7 +108,8 @@ export default function Intro() {
                 </Link>
 
                 <a className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full
-                outline-none hover:scale-105 transition cursor-cell borderBlack dark:bg-white/10"
+                outline-none hover:scale-105 transition cursor-cell borderBlack dark:bg-white/10
+                dark:border-white/5"
                     href="/Sarthak_Khandelwal.pdf" download>
 
                     Download CV <BsDownload
@@ -117,14 +118,14 @@ export default function Intro() {
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
                 gap-2 rounded-full borderBlack hover:scale-[1.075] cursor-pointer transition
-                dark:bg-white/10 dark:text-white/60"
+                dark:bg-white/10 dark:text-white/60 dark:border-white/5"
                     href="https://www.linkedin.com/in/sarthakhandelwal/" target="_blank">
                     <BsLinkedin />
                 </a>
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
                 rounded-full text-[1.175rem] borderBlack hover:scale-[1.075] cursor-pointer transition
-                dark:bg-white/10 dark:text-white/60"
+                dark:bg-white/10 dark:text-white/60 dark:border-white/5"
                     href="https://github.com/sarthakz25" target="_blank">
                     <BsGithub />
                 </a>

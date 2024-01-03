@@ -32,7 +32,7 @@ export default function ThemeSwitch() {
             className="fixed sm:top-6 bottom-6 right-6 bg-white w-[3.25rem] h-[3.25rem] bg-opacity-75
             backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-lg shadow-black/[0.03]
             rounded-full flex items-center justify-center dark:bg-zinc-950 dark:border-black/5 
-            dark:bg-opacity-75"
+            dark:bg-opacity-75 z-10"
             onClick={toggleTheme}
         >
             <AnimatePresence mode='wait'>

@@ -46,14 +46,14 @@ export const experiencesData = [
         location: "IRCTC - Churchgate, Mumbai",
         description: "Enhanced user experience of the IRCTC Tourism website, enhancing multilingual support, improving mobile navigation, debugging personalized tourist recommendations, etc.",
         icon: React.createElement(FaTrain),
-        date: "June 2022 - July 2022",
+        date: "Jun 2022 - Jul 2022",
     },
     {
         title: "Digital Creatives Executive",
         location: "Social Conclave - MPSTME",
         description: "Utilized Adobe Premiere Pro, Illustrator, Photoshop After Effects to make digital creative content for events and promotions, including t-shirt designs, ID cards, medals, social media posts, etc.",
         icon: React.createElement(MdEvent),
-        date: "Dec 2021 - March 2022",
+        date: "Dec 2021 - Mar 2022",
     },
     {
         title: "Technical Executive",

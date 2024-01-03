@@ -21,11 +21,11 @@ export default function Home() {
   useEffect(() => {
     const preloaderTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1750);
 
     const contentTimer = setTimeout(() => {
       setShowContent(true);
-    }, 2900);
+    }, 2750);
 
     return () => {
       clearTimeout(preloaderTimer);

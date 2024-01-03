@@ -29,7 +29,7 @@ export default function Index() {
         }
         const timeoutId = setTimeout(() => {
             setIndex((prevIndex) => prevIndex + 1);
-        }, index === 0 ? 925 : 175);
+        }, index === 0 ? 850 : 150);
 
         return () => clearTimeout(timeoutId);
     }, [index]);

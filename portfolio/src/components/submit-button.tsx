@@ -11,7 +11,7 @@ export default function SubmitButton() {
             className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] 
                     bg-gray-800 text-white rounded-full outline-none transition-all
                     hover:scale-105 hover:bg-gray-900 mt-3 disabled:bg-opacity-75
-                    dark:bg-white/10"
+                    dark:bg-zinc-300 dark:hover:bg-zinc-200 dark:text-gray-900"
             disabled={pending}
         >{
                 pending

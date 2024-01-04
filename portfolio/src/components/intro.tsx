@@ -35,22 +35,25 @@ export default function Intro() {
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
+                        initial={{ opacity: 0, scale: 0.75, rotate: -10 }}
+                        animate={{ opacity: 1, scale: 1, rotate: 0 }}
                         transition={{
-                            type: "tween",
-                            duration: 0.2,
+                            type: "spring",
+                            stiffness: 250,
+                            damping: 20,
+                            duration: 0.25
                         }}
                     >
                         <Image
-                            className="h-28 w-28 rounded-full object-cover
-                            border-[0.25rem]  shadow-xl border-zinc-400/20"
+                            className="h-28 w-28 rounded-full object-cover border-[0.25rem] 
+                            shadow-xl border-zinc-400/20"
                             src={profile_pic}
                             alt='Display Picture'
                             width="192"
                             height="192"
                             quality="95"
-                            priority={true} />
+                            priority={true}
+                        />
                     </motion.div>
 
                     <motion.span className="absolute bottom-0 right-0 text-3xl"

@@ -121,14 +121,14 @@ export default function Intro() {
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
                 gap-2 rounded-full borderBlack hover:scale-[1.075] cursor-pointer transition
-                dark:bg-white/10 dark:text-white/60 dark:border-white/5"
+                dark:bg-white/10 dark:text-white/60 dark:border-white/5 dark:hover:text-white/80"
                     href="https://www.linkedin.com/in/sarthakhandelwal/" target="_blank">
                     <BsLinkedin />
                 </a>
 
                 <a className="bg-white p-4 text-gray-700 hover:text-gray-900 flex items-center
                 rounded-full text-[1.175rem] borderBlack hover:scale-[1.075] cursor-pointer transition
-                dark:bg-white/10 dark:text-white/60 dark:border-white/5"
+                dark:bg-white/10 dark:text-white/60 dark:border-white/5 dark:hover:text-white/80"
                     href="https://github.com/sarthakz25" target="_blank">
                     <BsGithub />
                 </a>

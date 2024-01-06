@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${Ageo.className} text-gray-950 relative pt-28 sm:pt-36 
+        className={`${Ageo.className} text-gray-950 relative
         dark:bg-zinc-900 dark:text-zinc-50 dark:text-opacity-90`}
       >
         <ThemeContextProvider>

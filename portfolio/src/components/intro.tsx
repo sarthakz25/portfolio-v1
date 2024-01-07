@@ -29,7 +29,7 @@ export default function Intro() {
     return (
         <section
             ref={ref}
-            className="intro mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96"
+            className="intro mb-28 max-w-[54rem] text-center sm:mb-0 scroll-mt-96"
             id='home'
         >
             <div className="flex items-center justify-center">
@@ -72,17 +72,15 @@ export default function Intro() {
             </div>
 
             <motion.h1
-                className="mb-8 mt-6 px-4 text-xl font-medium !leading-[1.5] sm:text-2xl"
+                className="mb-8 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
 
-                <span className="font-bold">Greetings! I'm Sarthak Khandelwal,</span> a passionate{" "}
-                <span className="font-bold">computer engineering student</span> thriving in my{" "}
-                <span className="font-bold">3rd year of BTech</span> at{" "}
-                <span className="italic">NMIMS MPSTME</span>. I take delight in crafting compelling{" "}
-                <span className="italic">websites and apps</span>, exploring the exciting realm of AI,
-                and dedicated to building exceptional <span className="underline">digital experiences</span>.
+                <span className="font-bold">Welcome!</span> I'm <span className="font-bold">Sarthak Khandelwal</span>
+                , a <span className="font-bold">Computer Engineering student</span> with a passion for crafting
+                intuitive <span className="italic">websites and applications</span>, exploring AI, and dedicated to
+                creating exceptional <span className="underline">digital experiences</span>.
 
             </motion.h1>
 
@@ -97,7 +95,7 @@ export default function Intro() {
             >
                 <Link
                     href="#contact"
-                    className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 
+                    className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2
                     rounded-full outline-none hover:scale-105 hover:bg-gray-900 transition borderBlack
                     dark:bg-zinc-300 dark:hover:bg-zinc-200 dark:text-gray-900 dark:border-white/5"
                     onClick={() => {

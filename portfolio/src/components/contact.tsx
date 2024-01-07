@@ -15,7 +15,7 @@ export default function Contact() {
         <motion.section
             ref={ref}
             id='contact'
-            className="scroll-mt-28 mb-14 w-[min(100%,38rem)] text-center font-medium"
+            className="scroll-mt-28 mb-32 w-[min(100%,38rem)] text-center font-medium"
             initial={{
                 opacity: 0,
             }}

@@ -2,7 +2,6 @@
 
 import React from 'react';
 import SectionHeading from './section-heading';
-import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 import { BiSolidQuoteRight } from "react-icons/bi"
 
@@ -10,13 +9,8 @@ export default function About() {
     const { ref } = useSectionInView('About');
 
     return (
-        <motion.section
+        <section
             className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-                delay: 0.175
-            }}
             id='about'
             ref={ref}
         >
@@ -24,14 +18,22 @@ export default function About() {
                 About Me
             </SectionHeading>
 
-            <p className="mb-10">
-                Based in the <span className="font-medium">vibrant tech hub of Mumbai, India</span>,
+            <p className="mb-4">
+                {/* Based in the <span className="font-medium">vibrant tech hub of Mumbai, India</span>,
                 I live at the epicenter of innovation, continually developing my skills to contribute to the
                 next wave of digital advancement. My fascination with technology started from taking gadgets
                 apart to see how they work, all the way to staying up late{" "}
                 <span className="italic">tinkering with code</span>.
                 Lately, I've been focused on honing my skills in{" "}
-                <span className="font-medium">React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python</span>.
+                <span className="font-medium">React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python</span>. */}
+
+                Based in the vibrant tech hub of Mumbai, India, I live at the epicenter of innovation, continually developing my skills to contribute to the next wave of digital advancement. My fascination with technology started from taking gadgets apart to see how they work, all the way to staying up late tinkering with code.
+
+            </p>
+
+            <p className="mb-10">
+                I believe strongly in continuous learning and self-improvement. I try to make the most of every situation to better myself, whether favorable or not. I'm currently focused on honing my skills in React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python.
+
             </p>
 
             <blockquote
@@ -49,6 +51,6 @@ export default function About() {
                 </p>
             </blockquote>
 
-        </motion.section>
+        </section>
     )
 }

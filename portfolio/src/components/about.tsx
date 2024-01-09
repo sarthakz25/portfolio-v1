@@ -18,22 +18,17 @@ export default function About() {
                 About Me
             </SectionHeading>
 
-            <p className="mb-4">
-                {/* Based in the <span className="font-medium">vibrant tech hub of Mumbai, India</span>,
-                I live at the epicenter of innovation, continually developing my skills to contribute to the
-                next wave of digital advancement. My fascination with technology started from taking gadgets
-                apart to see how they work, all the way to staying up late{" "}
-                <span className="italic">tinkering with code</span>.
-                Lately, I've been focused on honing my skills in{" "}
-                <span className="font-medium">React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python</span>. */}
-
-                Based in the vibrant tech hub of Mumbai, India, I live at the epicenter of innovation, continually developing my skills to contribute to the next wave of digital advancement. My fascination with technology started from taking gadgets apart to see how they work, all the way to staying up late tinkering with code.
-
+            <p className="mb-5">
+                Based in Mumbai, the vibrant tech hub of India, I am a driven third-year student at NMIMS MPSTME,
+                with a lifelong fascination for technology. My curiosity evolved from disassembling gadgets to
+                late nights spent coding, fueled by a belief in constant learning.
             </p>
 
-            <p className="mb-10">
-                I believe strongly in continuous learning and self-improvement. I try to make the most of every situation to better myself, whether favorable or not. I'm currently focused on honing my skills in React, Next.js, TypeScript, Tailwind CSS, Flutter, Kotlin, Java, C++, and Python.
-
+            <p className="mb-7">
+                I'm currently focused on refining my skills with Next.js, TypeScript, Tailwind, Flutter, Kotlin,
+                Java and Python. When not coding, you can find me playing football, hitting the gym, or unwinding
+                with music. I stay inspired by immersing myself in the latest tech innovations, always seeking
+                new challenges to grow.
             </p>
 
             <blockquote

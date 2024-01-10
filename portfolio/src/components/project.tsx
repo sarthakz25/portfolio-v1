@@ -40,7 +40,7 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
                     {
                         tags.map((tag, index) => (
                             <li className="bg-zinc-700 px-3 py-1 text-xs uppercase tracking-wider
-                        text-white rounded-full dark:text-black/70 dark:bg-zinc-200" key={index}>
+                        text-white rounded-full dark:text-zinc-900 dark:bg-zinc-200" key={index}>
                                 {tag}
                             </li>
                         ))

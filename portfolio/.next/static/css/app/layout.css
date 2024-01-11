@@ -650,6 +650,9 @@ video {
 .z-\[999\] {
   z-index: 999;
 }
+.m-10 {
+  margin: 2.5rem;
+}
 .m-4 {
   margin: 1rem;
 }
@@ -781,14 +784,11 @@ video {
 .max-w-\[45rem\] {
   max-width: 45rem;
 }
-.max-w-\[54rem\] {
-  max-width: 54rem;
+.max-w-\[67rem\] {
+  max-width: 67rem;
 }
-.max-w-\[75rem\] {
-  max-width: 75rem;
-}
-.max-w-\[70rem\] {
-  max-width: 70rem;
+.flex-1 {
+  flex: 1 1 0%;
 }
 .grow {
   flex-grow: 1;
@@ -1038,6 +1038,9 @@ video {
 .\!leading-\[1\.4\] {
   line-height: 1.4 !important;
 }
+.\!leading-\[1\.5\] {
+  line-height: 1.5 !important;
+}
 .leading-8 {
   line-height: 2rem;
 }
@@ -1049,15 +1052,6 @@ video {
 }
 .tracking-wider {
   letter-spacing: 0.05em;
-}
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-.tracking-normal {
-  letter-spacing: 0em;
-}
-.-tracking-widest {
-  letter-spacing: -0.1em;
 }
 .text-gray-300 {
   --tw-text-opacity: 1;
@@ -1164,6 +1158,21 @@ html.dark {
     flex-direction: column;
     padding-top: var(--header-height);
     box-sizing: border-box;
+}
+
+.path {
+    stroke-dasharray: 500px 100px;
+    animation: animate 100s linear infinite alternate-reverse;
+}
+
+@keyframes animate {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 12433.8193359375;
+    }
 }
 
 .last\:mb-0:last-child {
@@ -1277,16 +1286,6 @@ html.dark {
   border-color: rgb(255 255 255 / 0.05);
 }
 
-:is(.dark .dark\:border-black) {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-zinc-950) {
-  --tw-border-opacity: 1;
-  border-color: rgb(9 9 11 / var(--tw-border-opacity));
-}
-
 :is(.dark .dark\:border-zinc-900) {
   --tw-border-opacity: 1;
   border-color: rgb(24 24 27 / var(--tw-border-opacity));
@@ -1355,10 +1354,6 @@ html.dark {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-black\/70) {
-  color: rgb(0 0 0 / 0.7);
-}
-
 :is(.dark .dark\:text-gray-100) {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -1412,11 +1407,6 @@ html.dark {
 :is(.dark .dark\:text-zinc-900) {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-zinc-950) {
-  --tw-text-opacity: 1;
-  color: rgb(9 9 11 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-opacity-90) {
@@ -1559,5 +1549,12 @@ html.dark {
 
   .group:nth-child(even) .sm\:group-even\:pl-8 {
     padding-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:w-\[450px\] {
+    width: 450px;
   }
 }

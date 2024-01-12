@@ -650,19 +650,16 @@ video {
 .z-\[999\] {
   z-index: 999;
 }
-.m-10 {
-  margin: 2.5rem;
-}
 .m-4 {
   margin: 1rem;
-}
-.my-28 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
 }
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+.my-32 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 .\!mt-0 {
   margin-top: 0px !important;
@@ -673,8 +670,8 @@ video {
 .-mt-5 {
   margin-top: -1.25rem;
 }
-.mb-11 {
-  margin-bottom: 2.75rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 .mb-24 {
   margin-bottom: 6rem;
@@ -712,8 +709,17 @@ video {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-7 {
-  margin-top: 1.75rem;
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-\[4\.5rem\] {
+  margin-top: 4.5rem;
+}
+.mt-\[3\.25rem\] {
+  margin-top: 3.25rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
 }
 .flex {
   display: flex;
@@ -784,8 +790,11 @@ video {
 .max-w-\[45rem\] {
   max-width: 45rem;
 }
-.max-w-\[67rem\] {
-  max-width: 67rem;
+.max-w-\[60rem\] {
+  max-width: 60rem;
+}
+.max-w-\[54rem\] {
+  max-width: 54rem;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1038,9 +1047,6 @@ video {
 .\!leading-\[1\.4\] {
   line-height: 1.4 !important;
 }
-.\!leading-\[1\.5\] {
-  line-height: 1.5 !important;
-}
 .leading-8 {
   line-height: 2rem;
 }
@@ -1151,7 +1157,7 @@ html.dark {
 }
 
 .intro {
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100svh - var(--header-height));
     display: flex;
     align-items: center;
     justify-content: center;

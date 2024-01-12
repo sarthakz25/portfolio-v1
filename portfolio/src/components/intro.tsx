@@ -8,7 +8,6 @@ import Link from 'next/link';
 import { BsArrowRight, BsDownload, BsLinkedin, BsGithub } from "react-icons/bs";
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
-import { Slide } from './slide';
 import HeroSvg from './hero-svg';
 
 export default function Intro() {
@@ -31,10 +30,10 @@ export default function Intro() {
     return (
         <section
             ref={ref}
-            className="intro mb-28 max-w-[67rem] sm:mb-0 scroll-mt-96"
+            className="intro mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-96"
             id='home'
         >
-            {/* <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.75, rotate: -10 }}
@@ -71,11 +70,11 @@ export default function Intro() {
                         👋
                     </motion.span>
                 </div>
-            </div> */}
+            </div>
 
-            <div className="flex flex-col sm:flex-row">
+            {/* <div className="flex">
                 <motion.h1
-                    className="flex-1 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+                    className="mb-12 mt-8 px-4 text-2xl font-medium !leading-[1.4] sm:text-3xl flex-1"
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
@@ -87,20 +86,11 @@ export default function Intro() {
 
                 </motion.h1>
 
-                <Slide
-                    className="m-10"
-                    delay={0.125}
-                >
-                    <HeroSvg />
-                </Slide>
-            </div>
-
-            {/* <Slide delay={0.14}>
                 <HeroSvg />
-            </Slide>
+            </div> */}
 
             <motion.h1
-                className="mb-11 mt-7 px-4 text-2xl font-medium !leading-[1.4] sm:text-3xl"
+                className="mb-12 mt-8 px-4 text-2xl font-medium !leading-[1.4] sm:text-3xl"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
@@ -110,7 +100,7 @@ export default function Intro() {
                 intuitive <span className="italic">websites and applications</span>, exploring AI, and dedicated to
                 creating exceptional <span className="underline">digital experiences</span>.
 
-            </motion.h1> */}
+            </motion.h1>
 
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center 

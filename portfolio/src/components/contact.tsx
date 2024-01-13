@@ -31,7 +31,7 @@ export default function Contact() {
         >
             <AnimatedHeading text={"Contact Me"} />
 
-            <p className="text-gray-700 -mt-5 dark:text-white/80">
+            <p className="text-gray-700 -mt-4 dark:text-white/80">
                 Let's connect! Reach out via{" "}
                 <a className="underline" href="mailto:sarthakhandelwal@gmail.com">
                     sarthakhandelwal@gmail.com

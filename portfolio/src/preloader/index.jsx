@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState, useCallback } from 'react';
 import { motion } from "framer-motion";
 import styles from "@/preloader/style.module.css";

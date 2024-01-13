@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';

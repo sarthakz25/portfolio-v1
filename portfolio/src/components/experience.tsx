@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import AnimatedHeading from '@/animations/animated-heading';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';

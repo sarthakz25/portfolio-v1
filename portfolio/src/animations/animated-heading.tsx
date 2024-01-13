@@ -32,7 +32,7 @@ export default function AnimatedHeading({
     const characterAnimation = {
         hidden: {
             opacity: 0,
-            y: `0.25em`,
+            y: `0.3em`,
         },
         visible: {
             opacity: 1,
@@ -40,8 +40,10 @@ export default function AnimatedHeading({
             transition: {
                 // duration: 0.45,
                 // ease: [0.2, 0.65, 0.3, 0.9],
-                duration: 0.75,
+                duration: 0.9,
                 ease: "easeInOut",
+                // ease: [0.5, 0, 0.25, 1],
+                // ease: "backInOut",
             },
         },
     };

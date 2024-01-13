@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import SectionHeading from './section-heading';
+import AnimatedHeading from '@/animations/animated-heading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from "framer-motion";
@@ -30,9 +30,8 @@ export default function Skills() {
             id='skills'
             ref={ref}
         >
-            <SectionHeading>
-                My Skills
-            </SectionHeading>
+            <AnimatedHeading text={"My Skills"} />
+            
 
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 font-medium">
                 {

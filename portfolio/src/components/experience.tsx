@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionHeading from './section-heading';
+import AnimatedHeading from '@/animations/animated-heading';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
@@ -16,9 +16,7 @@ export default function Experience() {
             className="scroll-mt-28 mb-28 sm:mb-40"
             ref={ref}
         >
-            <SectionHeading>
-                My Experience
-            </SectionHeading>
+            <AnimatedHeading text={"My Experience"} />
 
             <VerticalTimeline lineColor=''>
                 {

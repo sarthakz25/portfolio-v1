@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import SectionHeading from './section-heading';
+import AnimatedHeading from '@/animations/animated-heading';
 import { useSectionInView } from '@/lib/hooks';
 import { BiSolidQuoteRight } from "react-icons/bi"
 
@@ -14,9 +14,7 @@ export default function About() {
             id='about'
             ref={ref}
         >
-            <SectionHeading>
-                About Me
-            </SectionHeading>
+            <AnimatedHeading text={"About Me"} />
 
             <p className="text-gray-800 dark:text-gray-300 font-medium leading-relaxed mb-5">
                 Based in <span className="font-semibold">Mumbai</span>, the vibrant tech hub of India, I am a

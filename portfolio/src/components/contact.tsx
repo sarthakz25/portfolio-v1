@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import SectionHeading from './section-heading';
+import AnimatedHeading from '@/animations/animated-heading';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
@@ -29,9 +29,7 @@ export default function Contact() {
                 once: true,
             }}
         >
-            <SectionHeading>
-                Contact Me
-            </SectionHeading>
+            <AnimatedHeading text={"Contact Me"} />
 
             <p className="text-gray-700 -mt-5 dark:text-white/80">
                 Let's connect! Reach out via{" "}

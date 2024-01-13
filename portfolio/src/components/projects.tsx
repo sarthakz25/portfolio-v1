@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import SectionHeading from './section-heading';
+import AnimatedHeading from '@/animations/animated-heading';
 import { projectsData } from '@/lib/data';
 import Project from "@/components/project";
 import { useSectionInView } from '@/lib/hooks';
@@ -11,9 +11,7 @@ export default function Projects() {
 
     return (
         <section ref={ref} id='projects' className="scroll-mt-28 mb-36">
-            <SectionHeading>
-                My Projects
-            </SectionHeading>
+            <AnimatedHeading text={"My Projects"} />
 
             <div>
                 {

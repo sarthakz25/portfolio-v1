@@ -6,7 +6,7 @@ import Header from "@/components/header";
 import About from "@/components/about";
 import Intro from "@/components/intro";
 import SectionDivider from "@/components/section-divider";
-import Preloader from "@/components/preloader";
+import Preloader from "@/preloader";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";

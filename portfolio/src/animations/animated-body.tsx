@@ -14,7 +14,7 @@ export default function AnimatedBody({
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.1,
+        threshold: 0.5,
         triggerOnce: true,
     });
 
@@ -35,7 +35,7 @@ export default function AnimatedBody({
             opacity: 1,
             y: `0em`,
             transition: {
-                delay: 0.1,
+                delay: 0.125,
                 duration: 1,
                 ease: [0.2, 0.65, 0.3, 0.9],
             },

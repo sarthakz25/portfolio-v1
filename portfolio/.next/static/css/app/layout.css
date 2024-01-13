@@ -724,6 +724,18 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mr-\[0\.025em\] {
+  margin-right: 0.025em;
+}
+.mr-\[0\.015em\] {
+  margin-right: 0.015em;
+}
+.mr-\[0\.0175em\] {
+  margin-right: 0.0175em;
+}
+.mr-\[0\.0125em\] {
+  margin-right: 0.0125em;
+}
 .inline-block {
   display: inline-block;
 }
@@ -1040,6 +1052,9 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-extrabold {
+  font-weight: 800;
 }
 .uppercase {
   text-transform: uppercase;

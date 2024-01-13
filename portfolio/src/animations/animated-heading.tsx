@@ -32,7 +32,7 @@ export default function AnimatedHeading({
     const characterAnimation = {
         hidden: {
             opacity: 0,
-            y: `0.125em`,
+            y: `0.175em`,
         },
         visible: {
             opacity: 1,
@@ -61,7 +61,7 @@ export default function AnimatedHeading({
                         variants={wordAnimation}
                         transition={{
                             delayChildren: index * 0.25,
-                            staggerChildren: 0.05,
+                            staggerChildren: 0.075,
                         }}
                         className={`inline-block whitespace-nowrap ${"mr-[8px]"}`}
                     >

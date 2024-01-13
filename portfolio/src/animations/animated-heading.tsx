@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useAnimation, motion } from 'framer-motion';
+import { useAnimation, motion, easeIn, easeOut, easeInOut, backIn, backOut } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 type AnimatedHeadingProps = {
@@ -32,7 +32,7 @@ export default function AnimatedHeading({
     const characterAnimation = {
         hidden: {
             opacity: 0,
-            y: `0.3em`,
+            y: `0.125em`,
         },
         visible: {
             opacity: 1,
@@ -40,10 +40,10 @@ export default function AnimatedHeading({
             transition: {
                 // duration: 0.45,
                 // ease: [0.2, 0.65, 0.3, 0.9],
-                duration: 0.9,
-                ease: "easeInOut",
+                duration: 1,
+                // ease: "easeInOut",
                 // ease: [0.5, 0, 0.25, 1],
-                // ease: "backInOut",
+                ease: "backInOut",
             },
         },
     };

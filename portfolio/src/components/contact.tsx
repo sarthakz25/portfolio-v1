@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitButton from '@/components/submit-button';
 import toast from 'react-hot-toast';
+import AnimatedBody from '@/animations/animated-body';
 
 export default function Contact() {
     const { ref } = useSectionInView('Contact', 0.75);
@@ -31,13 +32,13 @@ export default function Contact() {
         >
             <AnimatedHeading text={"Contact Me"} />
 
-            <p className="text-gray-700 -mt-4 dark:text-white/80">
+            <AnimatedBody className="text-gray-700 -mt-4 dark:text-white/80">
                 Let's connect! Reach out via{" "}
                 <a className="underline" href="mailto:sarthakhandelwal@gmail.com">
                     sarthakhandelwal@gmail.com
                 </a>{" "}
                 or use the form below.
-            </p>
+            </AnimatedBody>
 
             <form
                 className="mt-10 flex flex-col dark:text-black"

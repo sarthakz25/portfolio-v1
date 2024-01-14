@@ -58,7 +58,7 @@ export const experiencesData = [
     {
         title: "Technical Executive",
         location: "Sattva - MPSTME",
-        description: "Contributed to website development, live streaming on Youtube and Discord community creation, including bot design, to enhance Sattva's online visibility and user engagement.",
+        description: "Contributed to website development, live streaming on Youtube and Discord community creation, including bot design, to enhance Sattva’s online visibility and user engagement.",
         icon: React.createElement(MdEvent),
         date: "Nov 2021 - Feb 2022",
     },

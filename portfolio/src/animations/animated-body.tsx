@@ -14,7 +14,7 @@ export default function AnimatedBody({
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.25,
         triggerOnce: true,
     });
 

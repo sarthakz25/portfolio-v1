@@ -1,13 +1,13 @@
-import { useEffect } from 'react';
-import { useAnimation, motion, easeIn, easeOut, easeInOut, backIn, backOut } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type AnimatedHeadingProps = {
     text: string;
 };
 
 export default function AnimatedHeading({
-    text = '',
+    text = "",
 }: AnimatedHeadingProps) {
     const ctrls = useAnimation();
 
@@ -18,7 +18,7 @@ export default function AnimatedHeading({
 
     useEffect(() => {
         if (inView) {
-            ctrls.start('visible');
+            ctrls.start("visible");
         } else {
             ctrls.start("hidden");
         }

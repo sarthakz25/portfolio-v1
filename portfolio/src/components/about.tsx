@@ -1,18 +1,18 @@
 "use client";
 
-import React from 'react';
-import AnimatedHeading from '@/animations/animated-heading';
-import { useSectionInView } from '@/lib/hooks';
+import React from "react";
+import { useSectionInView } from "@/lib/hooks";
 import { BiSolidQuoteRight } from "react-icons/bi"
-import AnimatedBody from '@/animations/animated-body';
+import AnimatedHeading from "@/animations/animated-heading";
+import AnimatedBody from "@/animations/animated-body";
 
 export default function About() {
-    const { ref } = useSectionInView('About');
+    const { ref } = useSectionInView("About");
 
     return (
         <section
-            className="mb-28 mt-32 max-w-[45rem] text-center font-medium leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
-            id='about'
+            className="mb-28 max-w-[45rem] text-center font-medium leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
+            id="about"
             ref={ref}
         >
             <AnimatedHeading text={"About Me"} />
@@ -25,7 +25,7 @@ export default function About() {
             </AnimatedBody>
 
             <AnimatedBody className="text-gray-800 dark:text-gray-300 leading-relaxed mb-7">
-                I'm currently focused on refining my skills in <span className="font-semibold">Next.js</span>
+                I’m currently focused on refining my skills in <span className="font-semibold">Next.js</span>
                 , <span className="font-semibold">TypeScript</span>, <span className="font-semibold">Tailwind</span>
                 , <span className="font-semibold">Flutter</span>, <span className="font-semibold">Kotlin</span>
                 , <span className="font-semibold">Java</span> and <span className="font-semibold">Python</span>.
@@ -44,7 +44,7 @@ export default function About() {
                 />
                 <p className="text-left text-gray-800 dark:text-gray-300">
                     If our paths cross, feel free to say <span className="italic underline font-semibold">hello</span>!
-                    Whether meeting over coffee ☕ or a virtual chat, let's dive into <span className="font-semibold">front-end innovation, back-end systems, favorite coding languages</span>,
+                    Whether meeting over coffee ☕ or a virtual chat, let’s dive into <span className="font-semibold">front-end innovation, back-end systems, favorite coding languages</span>,
                     or anything on the cutting edge of technology.
                 </p>
             </blockquote>

@@ -1,17 +1,17 @@
 "use client";
 
-import Image from 'next/image';
-import React from 'react';
+import Image from "next/image";
+import React from "react";
 import profile_pic from "../../public/profile_pic.jpg";
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 import { BsArrowRight, BsDownload, BsLinkedin, BsGithub } from "react-icons/bs";
-import { useSectionInView } from '@/lib/hooks';
-import { useActiveSectionContext } from '@/context/active-section-context';
-import HeroSvg from './hero-svg';
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
+// import HeroSvg from "./hero-svg";
 
 export default function Intro() {
-    const { ref } = useSectionInView('Home', 0.5);
+    const { ref } = useSectionInView("Home", 0.5);
 
     // const { ref, inView } = useInView({
     //     threshold: 0.5,
@@ -30,8 +30,8 @@ export default function Intro() {
     return (
         <section
             ref={ref}
-            className="intro mb-32 max-w-[60rem] text-center scroll-mt-96"
-            id='home'
+            className="intro mb-28 sm:mb-0 max-w-[60rem] text-center scroll-mt-96"
+            id="home"
         >
             <div className="flex items-center justify-center">
                 <div className="relative">
@@ -49,7 +49,7 @@ export default function Intro() {
                             className="h-28 w-28 rounded-full object-cover border-[0.3rem] 
                             shadow-xl border-zinc-400/20"
                             src={profile_pic}
-                            alt='Display Picture'
+                            alt="Display Picture"
                             width="192"
                             height="192"
                             quality="95"
@@ -79,7 +79,7 @@ export default function Intro() {
                     animate={{ opacity: 1, y: 0 }}
                 >
 
-                    <span className="font-bold">Greetings</span>, I'm <span className="font-bold">Sarthak Khandelwal</span>
+                    <span className="font-bold">Greetings</span>, I’m <span className="font-bold">Sarthak Khandelwal</span>
                     , a <span className="font-bold">Computer Engineering student</span> with a passion for crafting
                     intuitive <span className="italic">websites and applications</span>, exploring AI, and dedicated to
                     creating exceptional <span className="underline">digital experiences</span>.
@@ -95,7 +95,7 @@ export default function Intro() {
                 animate={{ opacity: 1, y: 0 }}
             >
 
-                <span className="font-bold">Greetings</span>, I'm <span className="font-bold">Sarthak Khandelwal</span>
+                <span className="font-bold">Greetings</span>, I’m <span className="font-bold">Sarthak Khandelwal</span>
                 , a <span className="font-bold">Computer Engineering student</span> with a passion for crafting
                 intuitive <span className="italic">websites and applications</span>, exploring AI, and dedicated to
                 creating exceptional <span className="underline">digital experiences</span>.
@@ -117,7 +117,7 @@ export default function Intro() {
                     rounded-full outline-none hover:scale-105 hover:bg-gray-900 transition borderBlack
                     dark:bg-zinc-300 dark:hover:bg-zinc-200 dark:text-gray-900 dark:border-white/5"
                     onClick={() => {
-                        setActiveSection('Contact');
+                        setActiveSection("Contact");
                         setTimeOfLastClick(Date.now());
                     }}
                 >
@@ -152,5 +152,5 @@ export default function Intro() {
             </motion.div>
 
         </section>
-    )
+    );
 }

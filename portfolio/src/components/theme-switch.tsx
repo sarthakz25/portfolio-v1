@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import { FiSun, FiMoon } from 'react-icons/fi';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from '@/context/theme-context';
+import React from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "@/context/theme-context";
 
 export default function ThemeSwitch() {
     const { theme, toggleTheme } = useTheme();
@@ -37,8 +37,8 @@ export default function ThemeSwitch() {
             dark:bg-opacity-75 z-10"
             onClick={toggleTheme}
         >
-            <AnimatePresence mode='wait'>
-                {theme === 'light' ? (
+            <AnimatePresence mode="wait">
+                {theme === "light" ? (
                     <motion.div
                         key="light"
                         initial="initial"

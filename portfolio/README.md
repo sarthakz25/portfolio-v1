@@ -1,6 +1,6 @@
 # Portfolio Website V1
 
-Hey there! 👋 Welcome to my corner of the internet - `sarthakz25.tech`! It's my slice of the web, a mix of code meets creativity. Still adding 🔧 and features, but feel free to poke around and see what's new!
+Hey there! 👋 Welcome to my corner of the internet - `sarthakz25.tech`! It’s my slice of the web, a mix of code meets creativity. Still adding 🔧 and features, but feel free to poke around and see what’s new!
 
 ## Demo
 

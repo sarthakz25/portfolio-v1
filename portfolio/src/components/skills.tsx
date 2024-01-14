@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import AnimatedHeading from '@/animations/animated-heading';
-import { skillsData } from '@/lib/data';
-import { useSectionInView } from '@/lib/hooks';
+import React from "react";
+import AnimatedHeading from "@/animations/animated-heading";
+import { skillsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
@@ -22,16 +22,16 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
-    const { ref } = useSectionInView('Skills', 1);
+    const { ref } = useSectionInView("Skills", 1);
 
     return (
         <section
             className="mb-28 max-w-[45rem] scroll-mt-28 text-center sm:mb-36"
-            id='skills'
+            id="skills"
             ref={ref}
         >
             <AnimatedHeading text={"My Skills"} />
-            
+
 
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 font-medium">
                 {

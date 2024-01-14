@@ -1,16 +1,16 @@
-import type { Metadata } from 'next';
-import { Ageo } from '@/misc/custom-font';
-import './globals.css';
-import ActiveSectionContextProvider from '@/context/active-section-context';
-import { Toaster } from 'react-hot-toast';
-import ThemeContextProvider from '@/context/theme-context';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
-import ThemeSwitch from '@/components/theme-switch';
+import type { Metadata } from "next";
+import { Ageo } from "@/misc/custom-font";
+import "./globals.css";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
+import ThemeContextProvider from "@/context/theme-context";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
 export const metadata: Metadata = {
   title: "<Sarthak/> Portfolio",
-  description: "Sarthak Khandelwal: NMIMS B.Tech student blending tech prowess with creative insight.",
+  description: "Sarthak Khandelwal: NMIMS 3rd Year Computer Engineering student blending tech prowess with creative insight.",
 }
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
             {children}
             <Footer />
 
-            <Toaster position='bottom-center' />
+            <Toaster position="bottom-center" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

@@ -11,7 +11,7 @@ export default function About() {
 
     return (
         <section
-            className="mb-28 max-w-[45rem] text-center font-medium leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
+            className="mb-28 mt-32 max-w-[45rem] text-center font-medium leading-8 sm:mb-40 m-4 text-lg scroll-mt-28"
             id='about'
             ref={ref}
         >

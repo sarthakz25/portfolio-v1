@@ -60,7 +60,7 @@ export default function AnimatedHeading({
                         animate={ctrls}
                         variants={wordAnimation}
                         transition={{
-                            delayChildren: index * 0.25,
+                            delayChildren: index * 0.225,
                             staggerChildren: 0.075,
                         }}
                         className={`inline-block whitespace-nowrap ${"mr-[8px]"}`}

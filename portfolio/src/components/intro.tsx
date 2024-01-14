@@ -30,7 +30,7 @@ export default function Intro() {
     return (
         <section
             ref={ref}
-            className="intro mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-96"
+            className="intro mb-32 max-w-[60rem] text-center scroll-mt-96"
             id='home'
         >
             <div className="flex items-center justify-center">

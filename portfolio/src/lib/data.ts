@@ -5,6 +5,7 @@ import { MdEvent } from "react-icons/md"
 import bookmark from "../../public/bookmark.png"
 import converse from "../../public/converse.png"
 import screenscape from "../../public/screenscape.png"
+import inscribe from "../../public/inscribe.png"
 
 export const links = [
     {
@@ -66,39 +67,45 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Inscribe",
+        description: "Engineered a feature-rich note-taking app with real-time sync, rich text editing, image support, nested documents, and Stripe integration for subscription plans.",
+        tags: ["Next.js", "React", "Convex", "Tailwind"],
+        imageUrl: inscribe,
+    },
+    {
         title: "Converse",
-        description: "Created a social media mobile application that enables users (conversers) to share content, comment, vote, join conclaves, interact on an intuitive interface, etc.",
+        description: "Built a cross-platform social app facilitating content sharing, commenting, and community engagement with user authentication, moderation tools, and an intuitive interface.",
         tags: ["Flutter", "Riverpod", "Firebase"],
         imageUrl: converse,
     },
     {
         title: "Bookmark",
-        description: "Developed an augmented reality mobile application that provides indoor navigation and wayfinding in a college library using QR code re-centering, movable arrow/line guides, and mapped routes.",
+        description: "Created an AR-powered indoor navigation app for a college library, featuring QR code re-centering, wayfinding aids, mapped routes, and movable arrow/line indicators.",
         tags: ["Unity", "ARCore", "C#"],
         imageUrl: bookmark,
     },
     {
         title: "ScreenScape",
-        description: "Built a movie website with features key features like authentication, movie search and filtering, movie details and trailers, ratings, profile management.",
-        tags: ["HTML", "CSS", "Javascript", "PHP", "SQL"],
+        description: "Developed a movie discovery website with user authentication, search/filtering, TMDB API integration, detailed movie pages featuring trailers, and personalized recommendations.",
+        tags: ["HTML", "CSS", "Javascript", "SQL"],
         imageUrl: screenscape,
     },
 ] as const;
 
 export const skillsData = [
     "Java",
-    "Dart",
     "Python",
     "C++",
     "Node.js",
     "React",
-    "Next.js",
-    "JavaScript",
     "TypeScript",
-    "SQL",
+    "JavaScript",
+    "Dart",
+    "Kotlin",
     "HTML",
     "CSS",
+    "SQL",
     "Firebase",
-    "Kotlin",
+    "Docker",
     "Git",
 ] as const;

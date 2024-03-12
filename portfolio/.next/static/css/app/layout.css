@@ -1,8 +1,109 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\misc\\custom-font.ts","import":"","arguments":[{"src":[{"path":"../assets/fonts/light.ttf","weight":"300","style":"normal"},{"path":"../assets/fonts/light-italic.ttf","weight":"300","style":"italic"},{"path":"../assets/fonts/regular.ttf","weight":"400","style":"normal"},{"path":"../assets/fonts/regular-italic.ttf","weight":"400","style":"italic"},{"path":"../assets/fonts/medium.ttf","weight":"500","style":"normal"},{"path":"../assets/fonts/medium-italic.ttf","weight":"500","style":"italic"},{"path":"../assets/fonts/semi-bold.ttf","weight":"600","style":"normal"},{"path":"../assets/fonts/semi-bold-italic.ttf","weight":"600","style":"italic"},{"path":"../assets/fonts/bold.ttf","weight":"700","style":"normal"},{"path":"../assets/fonts/bold-italic.ttf","weight":"700","style":"italic"},{"path":"../assets/fonts/extra-bold.ttf","weight":"800","style":"normal"},{"path":"../assets/fonts/extra-bold-italic.ttf","weight":"800","style":"italic"}]}],"variableName":"Ageo"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/6468d012b8366979-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/b5525bff56aca8e8-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 300;
+font-style: italic;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/70d4e6b2f8a63325-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/932887af5b823080-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 400;
+font-style: italic;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/aa0668b36c59d68a-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/e5352bccb3cea7ad-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 500;
+font-style: italic;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/48f98ceda03e2c96-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/fe57712c981566cf-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 600;
+font-style: italic;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/30c610da10d64c1d-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/7367ef6c024e8dea-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 700;
+font-style: italic;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/e860201abb1da845-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 800;
+font-style: normal;
+}
+
+@font-face {
+font-family: '__Ageo_c84e34';
+src: url(/_next/static/media/1ab8f38a6eeab3de-s.p.ttf) format('truetype');
+font-display: swap;
+font-weight: 800;
+font-style: italic;
+}@font-face {font-family: '__Ageo_Fallback_c84e34';src: local("Arial");ascent-override: 78.06%;descent-override: 25.33%;line-gap-override: 20.68%;size-adjust: 96.72%
+}.__className_c84e34 {font-family: '__Ageo_c84e34', '__Ageo_Fallback_c84e34'
+}
+
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
 /*
-! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -29,17 +130,20 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
 }
 
 /*
@@ -1466,104 +1570,3 @@ html.dark {
     width: 450px;
   }
 }
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[3].use[2]!./node_modules/next/font/local/target.css?{"path":"src\\misc\\custom-font.ts","import":"","arguments":[{"src":[{"path":"../assets/fonts/light.ttf","weight":"300","style":"normal"},{"path":"../assets/fonts/light-italic.ttf","weight":"300","style":"italic"},{"path":"../assets/fonts/regular.ttf","weight":"400","style":"normal"},{"path":"../assets/fonts/regular-italic.ttf","weight":"400","style":"italic"},{"path":"../assets/fonts/medium.ttf","weight":"500","style":"normal"},{"path":"../assets/fonts/medium-italic.ttf","weight":"500","style":"italic"},{"path":"../assets/fonts/semi-bold.ttf","weight":"600","style":"normal"},{"path":"../assets/fonts/semi-bold-italic.ttf","weight":"600","style":"italic"},{"path":"../assets/fonts/bold.ttf","weight":"700","style":"normal"},{"path":"../assets/fonts/bold-italic.ttf","weight":"700","style":"italic"},{"path":"../assets/fonts/extra-bold.ttf","weight":"800","style":"normal"},{"path":"../assets/fonts/extra-bold-italic.ttf","weight":"800","style":"italic"}]}],"variableName":"Ageo"} ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/6468d012b8366979-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 300;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/b5525bff56aca8e8-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 300;
-font-style: italic;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/70d4e6b2f8a63325-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 400;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/932887af5b823080-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 400;
-font-style: italic;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/aa0668b36c59d68a-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 500;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/e5352bccb3cea7ad-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 500;
-font-style: italic;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/48f98ceda03e2c96-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 600;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/fe57712c981566cf-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 600;
-font-style: italic;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/30c610da10d64c1d-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 700;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/7367ef6c024e8dea-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 700;
-font-style: italic;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/e860201abb1da845-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 800;
-font-style: normal;
-}
-
-@font-face {
-font-family: '__Ageo_c84e34';
-src: url(/_next/static/media/1ab8f38a6eeab3de-s.p.ttf) format('truetype');
-font-display: swap;
-font-weight: 800;
-font-style: italic;
-}@font-face {font-family: '__Ageo_Fallback_c84e34';src: local("Arial");ascent-override: 78.06%;descent-override: 25.33%;line-gap-override: 20.68%;size-adjust: 96.72%
-}.__className_c84e34 {font-family: '__Ageo_c84e34', '__Ageo_Fallback_c84e34'
-}
-
